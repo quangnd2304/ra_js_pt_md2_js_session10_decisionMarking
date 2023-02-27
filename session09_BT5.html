@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 5</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Nhập vào chuỗi gồm 4 chữ số ("abcd"), in ra chuỗi đảo
+            ngược ("dcba")
+            Input: abcd
+            process:
+               tính a,b,c,d
+            Output: dcba
+        */
+        //    B1: Nhập vào số gồm 4 chữ số
+        let number = parseInt(prompt("Nhập vào một số có 4 chữ số"));
+        // B2. lấy ra chữ số hàng nghìn number=abcd
+        let a = Math.floor(number / 1000);
+        number = number % 1000;//number=bcd
+        // B3. Lấy ra chữ số hàng trăm
+        let b = Math.floor(number / 100);
+        number = number % 100;//number = cd
+        //B4. Lấy ra chữ số hàng chục
+        let c = Math.floor(number / 10);
+        // B5. Lấy ra chữ số hàng đơn vị
+        let d = number % 10;
+        // B6. In ra số đảo ngược
+        console.log("Số đảo ngược là: " + d + c + b + a);
+    </script>
+</body>
+
+</html>

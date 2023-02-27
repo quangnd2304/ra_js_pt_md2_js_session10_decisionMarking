@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 4</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Nhập vào một số gồm 3 chữa số (int), in ra chữ số hàng
+            trăm, chục và đơn vị
+            input: abc
+            process:
+                tram = abc/100; 456/100 = 4;
+                chuc = (abc%100)/10;456%100=56/10= 5
+                dvi = (abc%100)%10; 456%100=56%10=6
+            output: tram,chuc,dvi           
+
+            */
+        //B1: nhập vào một số gồm 3 chữ số
+        let number = parseInt(prompt("Nhập vào một số có 3 chữ số"));
+        // B2. tính chữ số hàng trăm, chục, đơn vị
+        //Math.floor(number)--> làm tròn xuống
+        //Math.ceil(number) --> làm tròn lên
+        let tram = Math.floor(number / 100);
+        let chuc = Math.floor((number % 100) / 10);
+        let dvi = (number % 100) % 10;
+        // B3. In ra chữ số hàng tram chục và đơn vị
+        console.log("Chữ số hàng trăm:", tram);
+        console.log("Chữ số hàng chục:", chuc);
+        console.log("Chữ số hàng đơn vị: ", dvi);
+
+    </script>
+</body>
+
+</html>

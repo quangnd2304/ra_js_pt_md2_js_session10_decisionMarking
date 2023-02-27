@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu lệnh điều kiện</title>
+</head>
+
+<body>
+    <script>
+        // Trong câu lệnh if else: 1 if, n else if, 1 else
+        // VD1: Nhập vào một số nguyên, kiểm tra số nguyên có phải là số chẵn hay số lẻ
+        let number = parseInt(prompt("Nhập vào một số nguyên: "));
+        if (number % 2 == 0) {
+            console.log("Số nguyên là số chẵn");
+        } else {
+            console.log("Số nguyên là số lẻ");
+        }
+        // VD2: In ra số dư trong phép chia cho 3: if,else if, else
+        if (number % 3 == 0) {
+            console.log("Số nguyên chia hết cho 3");
+        } else if (number % 3 == 1) {
+            console.log("Số nguyên chia 3 dư 1");
+        } else {
+            console.log("Số nguyên chia 3 dư 2");
+        }
+        // VD3: In ra số dư trong phép chia 4: if, 2 else if, else
+        if (number % 4 == 0) {
+            console.log("Số nguyên chia hết cho 4");
+        } else if (number % 4 == 1) {
+            console.log("số nguyên chia 4 dư 1");
+        } else if (number % 4 == 2) {
+            console.log("số nguyên chia 4 dư 2");
+        } else {
+            console.log("Số nguyên chia 4 dư 3");
+        }
+        // VD 4: In ra số dư trong phép chia 10: if, 8 else if, else
+        // VD 5: Kiểm tra number có phải là số chia hết cho 2 và 3 không
+        if (number % 2 == 0 && number % 3 == 0) {
+            console.log("Số nguyên chia hết cho 2 và 3");
+        } else {
+            if (number % 2 == 0) {
+                console.log("Số nguyên chia hết cho 2");
+            } else {
+                if (number % 3 == 0) {
+                    console.log("Số nguyên chia hết cho 3");
+                } else {
+                    console.log("Số nguyên không chia hết cho 2 và chia hết cho 3");
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

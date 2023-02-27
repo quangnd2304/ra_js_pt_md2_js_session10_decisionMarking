@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Nhập vào năm sinh của bạn, in ra tuổi
+            input: year
+            process: age = 2023-year
+            output: age
+        */
+        // B1: Khai báo và khởi tạo giá trị cho biến year - lưu trữ năm sinh
+        // prompt("Nhập vào năm sinh của bạn")--> return String--> convert String --> int (parseInt)
+        let year = parseInt(prompt("Nhập vào năm sinh của bạn"));
+        let currentYear = parseInt(prompt("Nhập vào năm hiện tại"));
+
+        // B2: tính tuổi
+        let age = currentYear + year;
+        // B3. In tuổi 
+        console.log("Tuổi của bạn là: ", age);
+    </script>
+</body>
+
+</html>
